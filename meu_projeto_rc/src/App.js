@@ -1,8 +1,8 @@
 import './App.css';
 //Aqui vai servir para importar coisas 
-import Hello_World from './components/Helllo_World'
 
-import Teste_final from './components/Teste_Final'
+import SayMyName from './components/SayMyName'
+import Pessoa from './components/Pessoa'
 
 function App() {
   /*
@@ -25,18 +25,24 @@ function App() {
       <h1>Hello World</h1>
       <p>Alterando o código</p>
       <p>Olá {name}</p> 
+
+      
       {/* /* aqui posso inporlar com variáveis utilizando {} */ }
-      <p>Soma: {soma(4,5)}</p>
-      <div>
-      <img src={img} alt="Minha imagem"></img>
-      
-      </div>
-
+    
       {/* componentes importados */}
-      <Hello_World/>
+      {/* <Hello_World/> */}
       
+      <SayMyName nome="Állex"/>
 
-    </div>
+      <Pessoa 
+      nome="Állex" 
+      idade='21'
+      proficao='desenvolvedor'
+      foto='https://via.placeholder.com/100'
+      />
+
+      
+    </div>  
   );
 }
 
