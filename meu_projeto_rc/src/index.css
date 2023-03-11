@@ -2,17 +2,17 @@
   Alteração do meu css global!
 */
 
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body{
-  padding: 50px;
-  
+  padding: 10px;
   background-color: #efefef;
 }
 
-p{
-  background-color: aquamarine;
-  padding: 10px;
-  color: black;
+div.Menor_counter{
+  margin-top: 10px;
 
 }
-
 

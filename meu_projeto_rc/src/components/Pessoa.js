@@ -1,17 +1,16 @@
 //Passando conteúdo de estilo:
-import styles from './Pessoa.module.css'
-
+import './styles/estilos01.css'
 //Passando mais de uma propriedade(props)
 function Pessoa({foto,nome,idade,profissao}){
 
     return(
-        <div className={styles.Pessoa_Contanier}>
+        <div className='Menor_counter'>
             <img src={foto} alt={nome}></img>
-            <h2 className={styles.Pessoa_count}>Nome da pessoa: {nome}
+            <h2 >Nome da pessoa: {nome}
             </h2>
-            <p className={styles.Pessoa_count}>Idade: {idade}</p>
-            <p className={styles.Pessoa_count}>Profissão: {profissao}</p>
-
+            <p>Idade: {idade}</p>
+            <p>Profissão: {profissao}</p>
+            
         </div>
 
     )

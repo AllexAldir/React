@@ -1,9 +1,5 @@
 import './App.css';
-//Aqui vai servir para importar coisas 
-
-import SayMyName from './components/SayMyName'
-import Pessoa from './components/Pessoa'
-
+import { Botao } from './components/eventos/eventos01.js'
 function App() {
   /*
     Aqui nessa função aonde declaramos as variáveis do nosso scripts
@@ -16,33 +12,37 @@ function App() {
   const name = 'Állex'.toLocaleUpperCase()
   const soma = (x,y) => x + y
   
-  const img = 'http://via.placeholder.com/150'
+  // const img = 'http://via.placeholder.com/150'
   //Utilizando uma imagem dinâmica 
+  let array = []
 
+  function numAleatorio(){
+    const num = () => Math.round(Math.random() * (100 - 1) + 1)
+
+    let numero = num()
+
+    console.log(numero)
+
+    if(!array.includes(numero)){
+      array.push(numero)
+
+    }else{
+      console.log('Numero ja possui!')
+    }
+
+  }
 
   return (
     <div className="App">
       <h1>Hello World</h1>
       <p>Alterando o código</p>
       <p>Olá {name}</p> 
-
-      
-      {/* /* aqui posso inporlar com variáveis utilizando {} */ }
-    
-      {/* componentes importados */}
-      {/* <Hello_World/> */}
-      
-      <SayMyName nome="Állex"/>
-
-      <Pessoa 
-      nome="Állex" 
-      idade='21'
-      proficao='desenvolvedor'
-      foto='https://via.placeholder.com/100'
+      <p>A soma de 1 e de 2 é: {soma(1,2)}</p>
+      <Botao
+        evento={numAleatorio}
       />
-
-      
     </div>  
+
   );
 }
 

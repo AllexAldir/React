@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*Estilos para os meus componentes!*/
+
+.Maior_counter{
+    background-color: rgba(128, 0, 128, 0.536);
+    color: white;
+
+}
+
+.Menor_counter{
+    background-color: aqua;
+    color: white;
+    
+}
